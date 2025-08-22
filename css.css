@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+  }
+ 
+  header {
+    background: #142472;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+  nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+  }
+ 
+  #banner {
+    background: #66cfb3;
+    padding: 50px;
+    text-align: center;
+  }
+ 
+  #produtos {
+    padding: 30px;
+  }
+ 
+  .grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+ 
+  .produto {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+ 
+  .produto img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+ 
+  button {
+    margin-top: 10px;
+    background: #090238;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+ 
+  button:hover {
+    background: #6c0303;
+  }
+ 
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+  }
+ 
+  form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+ 
+  footer {
+    background: #005eb6;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+  }
+ 
+ 
