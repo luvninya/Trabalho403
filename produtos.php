@@ -1,9 +1,9 @@
 <?php
 
-define('DBSERVER', 'localhost');  // servidor do banco de dados
-define('DBUSER', 'root');         // usuário do MySQL
-define('DBPASS', '');             // senha de acesso ao MySQL
-define('DBBASE', 'empresa');      // nome da base de dados
+define('DBSERVER', 'localhost');  
+define('DBUSER', 'root');         
+define('DBPASS', '');             
+define('DBBASE', 'lojas');      
 
 $conexao = mysqli_connect(DBSERVER, DBUSER, DBPASS, DBBASE);
 
