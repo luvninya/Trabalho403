@@ -17,10 +17,10 @@ $resultado = mysqli_query($conexao, $sql);
 if (mysqli_num_rows($resultado) > 0) {
     echo "<h2>Produtos</h2>";
     while ($row = mysqli_fetch_assoc($resultado)) {
-        echo "Produtos: " . $row["Nome"] . " | Preço: R$" . $row["Preco"] . "<br>";
+        echo "Produtos: " . $row["id_produto"] . $row["nome_produto"] . " | Preço: R$" . $row["preco"] . "<br>";
     }
 } else {
-    echo "Nenhum cargo encontrado.<br>";
+    echo "Nenhum produto encontrado.<br>";
 }
 
 $sqlProdutos = "SELECT * FROM produtos";
@@ -30,7 +30,7 @@ if (mysqli_num_rows($resultadoProdutos) > 0) {
     echo "<h2>Selecione um Produto</h2>";
     echo '<select name="produtos" id="produtos">';
     while ($row = mysqli_fetch_assoc($resultadoProdutos)) {
-        echo '<option value="' . $row['id'] . '">' . $row['Nome'] . '</option>';
+        echo '<option value="' . $row['id_produto'] . '">' . $row['nome_produto'] . '</option>';
     }
     echo '</select>';
 } else {
