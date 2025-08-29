@@ -3,7 +3,7 @@
 define('DBSERVER', 'localhost');  
 define('DBUSER', 'root');         
 define('DBPASS', '');             
-define('DBBASE', 'lojas');      
+define('DBBASE', 'loja');      
 
 $conexao = mysqli_connect(DBSERVER, DBUSER, DBPASS, DBBASE);
 
@@ -26,16 +26,19 @@ $resultado = mysqli_query($conexao, $sql);
 <body>
 
   <header>
-    <img class="logo" src="Fotos/Imagens/logo_club.webp" alt="">
-    <h1>Loja Clube Social</h1>
+  <ul>
+    <li>
+	<div class="logo-div"><img class="logo" src="Fotos/Imagens/logo_club.webp" alt="">
+    <h1>Loja Clube Social</h1></div></li>
     <nav>
-      <a href="#">Início</a>
-      <a href="#produtos">Produtos</a>
-      <a href="#contato">Contato</a>
-      <span id="carrinho">🛒 0</span>
-      <section id="pesquisa">
+      <li><a href="#">Início</a></li>
+      <li><a href="#produtos">Produtos</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><span id="carrinho">🛒 0</span></li>
+      <li><section id="pesquisa"></li>
         <input type="text" id="barra-pesquisa" placeholder="Pesquisar produto...">
-      </section>
+      </section></li>
+	</ul>
     </nav>
   </header>
  
