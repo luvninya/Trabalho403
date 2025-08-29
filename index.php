@@ -24,13 +24,18 @@ $resultado = mysqli_query($conexao, $sql);
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
+    <img class="logo" src="Fotos/Imagens/logo_club.webp" alt="">
     <h1>Loja Clube Social</h1>
     <nav>
       <a href="#">Início</a>
       <a href="#produtos">Produtos</a>
       <a href="#contato">Contato</a>
       <span id="carrinho">🛒 0</span>
+      <section id="pesquisa">
+        <input type="text" id="barra-pesquisa" placeholder="Pesquisar produto...">
+      </section>
     </nav>
   </header>
  
@@ -90,7 +95,7 @@ $resultado = mysqli_query($conexao, $sql);
     <p>2025 Loja Clube Social - Todos os direitos reservados.</p>
   </footer>
  
-  <script src="frontend.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
 
