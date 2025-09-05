@@ -48,4 +48,4 @@ INSERT INTO `produtos` (`id_produto`, `nome_produto`, `preco`, `estoque`, `id_lo
   VALUES (4, 'Club Social Cebola Caramelizada', 6, NULL, 1, 7.5, 'club_social_cebola_caramelizada.webp');
 
 INSERT INTO `produtos` (`id_produto`, `nome_produto`, `preco`, `estoque`, `id_loja`, `preco_anterior`, `imagem`) 
-  VALUES (4, 'Club Social Presunto', 5.8, NULL, 1, 7, 'club_social_presunto.webp');
+  VALUES (5, 'Club Social Presunto', 5.8, NULL, 1, 7, 'club_social_presunto.webp');
